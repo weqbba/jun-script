@@ -727,6 +727,111 @@ Anim:AdjustSpeed(0.7)
     end
 
 end
+--AWARENESS STARTUP--
+humanoid.AnimationPlayed:Connect(onAnimationPlayed)
+
+
+local animationId = 12296882427
+
+
+local player = game.Players.LocalPlayer
+
+local character = player.Character or player.CharacterAdded:Wait()
+
+local humanoid = character:WaitForChild("Humanoid")
+
+
+local function onAnimationPlayed(animationTrack)
+
+    if animationTrack.Animation.AnimationId == "rbxassetid://" .. animationId then
+
+local p = game.Players.LocalPlayer
+
+local Humanoid = p.Character:WaitForChild("Humanoid")
+
+
+for _, animTrack in pairs(Humanoid:GetPlayingAnimationTracks()) do
+
+    animTrack:Stop()
+
+end
+
+
+local AnimAnim = Instance.new("Animation")
+
+AnimAnim.AnimationId = "rbxassetid://17838006839"
+
+local Anim = Humanoid:LoadAnimation(AnimAnim)
+
+
+local startTime = 0.39
+
+
+Anim:Play()
+
+Anim:AdjustSpeed(0)
+
+Anim.TimePosition = startTime
+
+Anim:AdjustSpeed(1)
+
+
+    end
+
+end
+
+humanoid.AnimationPlayed:Connect(onAnimationPlayed)
+
+
+local animationId = 12351854556
+
+
+local player = game.Players.LocalPlayer
+
+local character = player.Character or player.CharacterAdded:Wait()
+
+local humanoid = character:WaitForChild("Humanoid")
+
+
+local function onAnimationPlayed(animationTrack)
+
+    if animationTrack.Animation.AnimationId == "rbxassetid://" .. animationId then
+
+local p = game.Players.LocalPlayer
+
+local Humanoid = p.Character:WaitForChild("Humanoid")
+
+
+for _, animTrack in pairs(Humanoid:GetPlayingAnimationTracks()) do
+
+    animTrack:Stop()
+
+end
+
+
+local AnimAnim = Instance.new("Animation")
+
+AnimAnim.AnimationId = "rbxassetid://17861844708"
+
+local Anim = Humanoid:LoadAnimation(AnimAnim)
+
+
+local startTime = 0
+
+
+Anim:Play()
+
+Anim:AdjustSpeed(0)
+
+Anim.TimePosition = startTime
+
+Anim:AdjustSpeed(1)
+
+
+    end
+
+end
+
 --[[Downslam]]
 
 humanoid.AnimationPlayed:Connect(onAnimationPlayed)
@@ -1070,3 +1175,28 @@ end)
 
 -- Parent the tool to the player's character
 tool.Parent = player.Backpack
+
+game:GetService("StarterGui"):SetCore("SendNotification",{
+Title = "Script Loaded Enjoy!",
+Text = "Made By Inferno.klolondiscord", 
+
+Button1 = "I Will",
+Button2 = "Love you :3",
+Duration = 6
+})
+game:GetService("StarterGui"):SetCore("SendNotification",{
+Title = "NOTICE!",
+Text = "Use Phantasm Not Required But use it", 
+
+Button1 = "Ok",
+Button2 = "K",
+Duration = 6
+})
+game:GetService("StarterGui"):SetCore("SendNotification",{
+Title = "NOTICE!",
+Text = " Custom Moveset Based Off Of Jun From Combat Gods.", 
+
+Button1 = "ok i know",
+Button2 = "kepupimtofasimtofas",
+Duration = 6
+})
