@@ -15,7 +15,7 @@ local baseButton = hotbarFrame:FindFirstChild("1").Base
 local ToolName = baseButton.ToolName
 
 
-ToolName.Text = "Twin Fangs"
+ToolName.Text = "Fang Dance"
 
 
 local player = game.Players.LocalPlayer
@@ -155,7 +155,7 @@ Anim:AdjustSpeed(0.1)
 
 Anim.TimePosition = startTime
 
-Anim:AdjustSpeed(2.10)
+Anim:AdjustSpeed(2.19)
 
 
     end
