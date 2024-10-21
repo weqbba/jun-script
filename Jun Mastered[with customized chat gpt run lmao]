@@ -51,7 +51,7 @@ local baseButton = hotbarFrame:FindFirstChild("3").Base
 local ToolName = baseButton.ToolName
 
 
-ToolName.Text = "Mega Push"
+ToolName.Text = "9 Inch Killer Throw"
 
 
 local player = game.Players.LocalPlayer
@@ -155,7 +155,7 @@ Anim:AdjustSpeed(0.1)
 
 Anim.TimePosition = startTime
 
-Anim:AdjustSpeed(3.1)
+Anim:AdjustSpeed(2.10)
 
 
     end
@@ -271,7 +271,7 @@ Anim:AdjustSpeed(0)
 
 Anim.TimePosition = startTime
 
-Anim:AdjustSpeed(1)
+Anim:AdjustSpeed(1.9)
 
 
 delay(1.8, function()
